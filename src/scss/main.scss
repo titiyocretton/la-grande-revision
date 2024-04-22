@@ -1,0 +1,55 @@
+@import 'bootstrap/scss/bootstrap-grid';
+@import 'base';
+@import 'layout';
+@import 'modules/title';
+@import 'modules/exercise';
+@import 'exercices/01-selecteurs';
+@import 'exercices/02-flexbox';
+@import 'exercices/03-transitions';
+@import 'exercices/04-animations';
+@import 'exercices/05-mediaqueries';
+@import 'exercices/06-positions';
+@import 'exercices/07-smacss/main';
+@import 'exercices/08-bootstrap';
+
+.instructions {
+  padding: 15px 20px;
+  margin-bottom: 40px;
+  background: #eee;
+  line-height: 1.5;
+
+  ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+}
+
+.instructions-wrapper {
+  border: 1px solid #000;
+}
+
+.breakpoint {
+  width: 40px;
+  background: #eee;
+  margin: 0 auto 20px;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 10px;
+}
+
+.container + .breakpoint {
+  margin-top: 40px;
+}
+
+.breakpoint-2 {
+  width: 80px;
+  background: #eee;
+  margin: 0 auto 10px;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 10px;
+}
+
+.article + .breakpoint-2 {
+  margin-top: 20px;
+}
