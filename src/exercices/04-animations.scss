@@ -6,6 +6,16 @@
     border-radius: 50%;
     border: 5px solid #8ecae6;
     border-top-color: #023047;
+    animation: spinner-turn 2.5s linear infinite;
+  }
+
+  @keyframes spinner-turn {
+    to {
+      transform: rotateZ(360deg);
+    }
+    from {
+      transform: rotateZ(0deg);
+    }
   }
 
   .progress {
@@ -20,5 +30,25 @@
     height: 100%;
     background: #023047;
     border-radius: 10px;
+    animation: progress-animation 5s linear infinite;
+  }
+
+  @keyframes progress-animation {
+    0% {
+      width: 0;
+      background: #51a0ba;
+    }
+    30% {
+      width: 50%;
+      background: #023047;
+    }
+    50% {
+      width: 0;
+      background: #51a0ba;
+    }
+    100% {
+      width: 100%;
+      background: #023047;
+    }
   }
 }

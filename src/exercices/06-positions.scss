@@ -3,12 +3,17 @@
   background: #8ecae6;
   padding: 40px 20px;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .lightbox-close {
   padding: 0 5px;
   background: #219ebc;
   color: white;
+  position: relative;
+  top: -30px;
+  left: 246px;
 }
 
 .list-item {
@@ -19,7 +24,12 @@
 }
 
 .list-item-1 {
+  position: relative;
+  left: -15px;
 }
 
 .list-item-2 {
+  position: relative;
+  top: 20px;
+  left: 10px;
 }

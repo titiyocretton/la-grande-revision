@@ -5,6 +5,7 @@
   padding: 20px;
   background: #8ecae6;
   border-radius: 10px;
+  transition: 0.3s;
 }
 
 .button {
@@ -12,6 +13,7 @@
   display: inline-block;
   padding: 10px 20px;
   background: #8ecae6;
+  transition: 0.3s;
 }
 
 .card {
@@ -20,8 +22,27 @@
   padding: 20px;
   background: #8ecae6;
   border-radius: 10px;
+  transition: 0.3s;
 }
 
 .card-title {
   font-size: 20px;
+  transition: 0.3s;
+}
+
+.calltoaction:hover {
+  transform: scale(110%);
+}
+
+.button:hover {
+  background: #51a0ba;
+  color: white;
+}
+
+.card:hover {
+  background: #51a0ba;
+}
+
+.card:hover .card-title {
+  padding-left: 20px;
 }
